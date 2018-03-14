@@ -6,6 +6,8 @@ x=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
 
 while 4 > 2 :
+        data=raw_input("type your command  :  ")
+        x.sendto(data,("192.168.10.161",8822))
+        print(x.recvfrom(1000))
 
-	 print  x.sendto("date",("103.6.91.142",1234))
 
